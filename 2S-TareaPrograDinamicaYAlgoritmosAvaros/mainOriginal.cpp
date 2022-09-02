@@ -8,8 +8,15 @@ using namespace std;
 
 
 
-void cambioDinamico(int p, int q, int n, vector<int>& monedas){
+vector<int> cambioDinamico(vector<int> dinamita ,int p, int q, int n){
+    int cambio = q-p;
+    vector<int> intercambio;
 
+    for (int i = 0; i < dinamita.size(); i++){
+        intercambio.push_back(cambio/dinamita[i]);
+        cambio = cambio % dinamita[i];
+    }
+    return intercambio;
 }
 
 vector<int> cambioAvaro(vector<int> monedas, int cantMon, int cambio){

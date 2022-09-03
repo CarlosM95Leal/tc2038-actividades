@@ -9,6 +9,7 @@
         "chrono": "cpp",
         "limits": "cpp",
         "ratio": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "tgmath.h": "cpp"
     }
 }

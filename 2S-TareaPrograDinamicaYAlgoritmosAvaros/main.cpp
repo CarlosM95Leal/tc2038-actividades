@@ -51,7 +51,7 @@ vector<int> cambioDinamico(vector<int> monedas, int indice, int cantMon, int cam
 }
 */
 
-vector<int> minCoins(vector<int> coins, int m, int V)
+/*vector<int> minCoins(vector<int> coins, int m, int V)
 {
     vector<int> table(V+1, INT_MAX);
     table[0] = 0;
@@ -71,7 +71,7 @@ vector<int> minCoins(vector<int> coins, int m, int V)
       return vector<int>();
    
     return table;
-}
+}*/
 
 vector<int> cambioAvaro(vector<int> monedas, int cantMon, int cambio){
     vector<int>cantMonedas( cantMon);
@@ -129,12 +129,12 @@ int main(int argc, char *argv[])
 
     
     
-    vector<int> dp;
+   /* vector<int> dp;
     cout<<"Resultado dinamico"<<endl;
     vector<int> resultadoDinamico;
     //resultadoDinamico = cambioDinamico (monedas, 0, cantLineas, cambio);
     resultadoDinamico=minCoins(monedas, cantLineas, cambio);
-    //cout << "Minimum coins required is "<< minCoins(coins, m, V);
+    //cout << "Minimum coins required is "<< minCoins(coins, m, V);*/
 
     for (int i = cantLineas-1; i >=0 ; i--)
     {
